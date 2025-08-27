@@ -34,8 +34,9 @@ def search_google(query):
 
 def validate_phone_number(number):
     try:
-        API_KEY = "6cddf1fcd79d985e9efc9e140424b888"
-        url = "https://apilayer.net/api/validate"
+		url = "https://apilayer.net/api/validate"
+        api = input(f"Enter Your http://numverify.com API KEY:- ")
+        API_KEY = f"{api}"
         querystring = {"access_key": API_KEY, "number": number, "country_code": "IN", "format": "1"}
 
         print("[red][+] Validating phone number...[/red]\n")
@@ -98,4 +99,5 @@ if __name__ == "__main__":
     look(query)
     WhatsappInfo(query)
     instafind(query)
+
 
