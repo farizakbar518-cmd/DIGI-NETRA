@@ -1,4 +1,3 @@
-pyfiglet
-rich
-requests
-
+python netra.py
+# Pilih menu 1: Information By Number
+# 08566775971
